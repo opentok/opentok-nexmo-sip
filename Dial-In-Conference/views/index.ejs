@@ -8,15 +8,12 @@
         const roomId = '<%=roomId %>';
         const pinCode = '<%=pinCode %>';
         const conferenceNumber = '<%=conferenceNumber %>';
-        let connectionId, phoneNumber;
+        let connectionId;
         const dialOut = () => {
-          const phoneNumberElement = document.getElementById('phoneNumber');
-          phoneNumber = phoneNumberElement.value;
-          fetch(`/dial-out?roomId=${roomId}&phoneNumber=${phoneNumber}`)
+          fetch(`/dial-out?roomId=${roomId}`)
           .then(response => response.json())
           .then((sipData) => {
             connectionId = sipData.connectionId;
-            phoneNumberElement.value = '';
           }).catch((error) => {
               alert(`There was an error dialing-out`);
           })
