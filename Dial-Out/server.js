@@ -59,6 +59,7 @@ const setSessionDataAndRenderRoom = (res, roomId) => {
 */
 
 const setSipOptions = () => ({
+  from: config.sip.from,
   auth: {
     username: config.sip.username,
     password: config.sip.password,
