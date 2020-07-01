@@ -9,6 +9,7 @@ Before running the application, you need to configure the following credentials:
     * OpenTok API Key
     * OpenTok API Secret
   * Nexmo
+    * Nexmo Long Virtual number
     * Nexmo API Key
     * Nexmo API Secret
 
@@ -19,6 +20,7 @@ Copy the contents of `config.example.js` file into a new file called `config.js`
     apiKey: '', // TokBox apiKey
     apiSecret: '', // TokBox apiSecret
     sip: {
+      from: '', // Nexmo Long virtual number in xxxxxx@nexmo.com format
       username: '', // Nexmo apiKey
       password: '', // Nexmo apiSecret
   };
