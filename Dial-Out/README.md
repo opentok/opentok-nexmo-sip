@@ -33,7 +33,10 @@ You should use your OpenTok Key and Secret as the `apiKey` and `apiSecret` value
   * Create an API Project to get the API Key and Secret.
 
   For Nexmo:
-  * Sign up for a [Nexmo](https://www.nexmo.com/) account to get the API Key and Secret. You can also rent a Long virtual number to use it as FROM/CLI. This is not mandatory, but in some countries the calls can be rejected by our downstream carriers if no CLI (Call Line identity) is specified as we explain in [this article](https://help.nexmo.com/hc/en-us/articles/204015273-Does-Nexmo-support-CLI-Caller-ID-for-my-voice-calls-#:~:text=When%20using%20any%20of%20the,as%20your%20CLI%2FCaller%20ID.&text=CLI%20for%20in%2Dcountry%20originating,all%20of%20our%20virtual%20numbers.)
+  * Sign up for a [Nexmo](https://www.nexmo.com/) account to get the API Key and Secret. 
+  
+Optionally, you can also rent a Long Virtual Number (LVN) from Nexmo or your preferred provider to use it for Call Line Identifier (CLI). This LVN can be set in     from field to be used as a CLI. Although, this step is not mandatory, however, the downstream carriers may reject the call if the correct CLI has not been specified as explained in [this article](https://help.nexmo.com/hc/en-us/articles/204015273-Does-Nexmo-support-CLI-Caller-ID-for-my-voice-calls-  #:~:text=When%20using%20any%20of%20the,as%20your%20CLI%2FCaller%20ID.&text=CLI%20for%20in%2Dcountry%20originating,all%20of%20our%20virtual%20numbers.)
 
+  
 ## Starting the application
 `npm start`
