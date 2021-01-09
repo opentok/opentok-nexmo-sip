@@ -59,6 +59,7 @@ const setSessionDataAndRenderRoom = (res, roomId) => {
 */
 
 const setSipOptions = () => ({
+  from: config.sip.from,
   auth: {
     username: config.sip.username,
     password: config.sip.password,
@@ -126,3 +127,4 @@ app.get('/hang-up', (req, res) => {
 
 const port = process.env.PORT || '3000';
 app.listen(port, () => console.log(`listening on port ${port}`));
+
