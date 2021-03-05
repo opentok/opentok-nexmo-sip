@@ -155,11 +155,16 @@ app.get('/nexmo-answer', (req, res) => {
     ncco.push(
       {
         action: 'talk',
-        text: 'Please enter a a pin code to join the session'
+        text: 'Please enter a a pin code to join the session',
+        bargeIn: true
+
       },
       {
+
         action: 'input',
-        eventUrl: [`${serverUrl}/nexmo-dtmf`]
+        eventUrl: [`${serverUrl}/nexmo-dtmf`],
+        timeOut:30
+
       }
     )
   }
