@@ -13,7 +13,7 @@ Before running the application, you need to configure the following credentials:
     * Nexmo API Key
     * Nexmo API Secret
 
-Copy the contents of `config.example.js` file into a new file called `config.js`.  
+Copy the contents of `config.example.js` file into a new file called `config.js`. 
 
 ```
   module.exports = {
