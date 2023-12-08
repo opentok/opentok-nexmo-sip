@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This repo is archived and the sample is deprecated. Please see the updated documentation and sample in this [repository](https://github.com/Vonage-Community/video-api-web-samples/tree/main/SIP).
+
 # Opentok Nexmo SIP Samples
 
 ### In this repo, you'll find the following sample applications:
